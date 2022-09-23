@@ -42,7 +42,8 @@ namespace UsersDot.Controllers
 
                 if(user == null)
                     return BadRequest("No se Encontro Usuario");
-                return Ok(await _datacontext.Users.ToListAsync());
+
+                return Ok(user);
 
 
         }
